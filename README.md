@@ -1,0 +1,1 @@
+# OpenTok-ScreenShare-HideButton
