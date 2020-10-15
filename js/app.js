@@ -311,7 +311,7 @@ function startScreenSharing() {
     if (!response.supported || response.extensionRegistered === false) {
       // This browser does not support screen sharing.
       alert('screen sharing not supported');
-      document.getElementById('screenShareStart').style.display = 'none';
+      document.getElementById('screenShareStart').style.visibility = 'hidden';
     } else if (response.extensionInstalled === false) {
       // Prompt to install the extension.
     } else {
