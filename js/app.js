@@ -125,40 +125,7 @@ function initializeSession() {
     // displayConnectionCount();
   });
 
-  // publisher_screen.on('streamDestroyed', function (event) {
-  //   console.log('hadfgddgfh event: ', event)
-  //   if (event.reason === 'mediaStopped') {
-  //     // User clicked stop sharing
-  //     console.log('screen sharing stopped: ', event.reason);
-  //   } else if (event.reason === 'forceUnpublished') {
-  //     // A moderator forced the user to stop sharing.
-  //     console.log('screen sharing stopped: ', event.reason);
-  //   }
-  // });
 
-  // publisher_screen.on('connectionDestroyed', function (event) {
-  //   console.log('hadfgddgfh event: ', event)
-  //   if (event.reason === 'mediaStopped') {
-  //     // User clicked stop sharing
-  //     console.log('screen sharing stopped: ', event.reason);
-  //   } else if (event.reason === 'forceUnpublished') {
-  //     // A moderator forced the user to stop sharing.
-  //     console.log('screen sharing stopped: ', event.reason);
-  //   }
-  // });
-
-  // initialize the publisher
-  // var stream;
-  // var isAudioShared = false;
-  // try {
-  //   stream = await navigator.mediaDevices.getDisplayMedia({video: true, audio: true})
-  //   if(stream && stream.getAudioTracks()) {
-  //     var audioTracks = stream.getAudioTracks().length;
-  //     isAudioShared = audioTracks > 0;
-  //   }
-  // } catch (error) {
-  //   console.log('getDisplayMedia failed');
-  // }
   var publisherOptions = {
     name: 'desktop',
     // videoSource: null,
