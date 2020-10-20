@@ -308,11 +308,10 @@ function startScreenSharing() {
 
   OT.checkScreenSharingCapability(function (response) {
     console.log('response screen sharing : ', response)
-    alert('response - ', JSON.stringify(response));
-    console.log('response : ', JSON.parse(response));
-    if(response.supported == false || response.extensionRegistered === false) {
+    if(response.supported === false || response.extensionRegistered === false) {
       alert('screen sharing not supported');
       document.getElementById('screenShareStart').style.visibility = 'hidden';
+      document.getElementById('screenShareStart').style.display = 'none';
     }
     // if (!response.supported || response.extensionRegistered === false) {
     //   // This browser does not support screen sharing.
