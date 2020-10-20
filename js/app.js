@@ -309,6 +309,7 @@ function startScreenSharing() {
   OT.checkScreenSharingCapability(function (response) {
     console.log('response screen sharing : ', response)
     alert('response - ', JSON.stringify(response));
+    console.log('response : ', JSON.parse(response));
     if (!response.supported || response.extensionRegistered === false) {
       // This browser does not support screen sharing.
       alert('screen sharing not supported');
