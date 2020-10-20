@@ -310,11 +310,16 @@ function startScreenSharing() {
     console.log('response screen sharing : ', response)
     alert('response - ', JSON.stringify(response));
     console.log('response : ', JSON.parse(response));
-    if (!response.supported || response.extensionRegistered === false) {
-      // This browser does not support screen sharing.
+    if(response.supported == false || response.extensionRegistered === false) {
       alert('screen sharing not supported');
       document.getElementById('screenShareStart').style.visibility = 'hidden';
-    } else if (response.extensionInstalled === false) {
+    }
+    // if (!response.supported || response.extensionRegistered === false) {
+    //   // This browser does not support screen sharing.
+    //   alert('screen sharing not supported');
+    //   document.getElementById('screenShareStart').style.display = 'none';
+    // } 
+     else if (response.extensionInstalled === false) {
       // Prompt to install the extension.
     } else {
       // Screen sharing is available. Publish the screen.
