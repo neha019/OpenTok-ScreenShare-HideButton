@@ -278,7 +278,6 @@ function startScreenSharing() {
     if(response.supported === false || response.extensionRegistered === false) {
       alert('screen sharing not supported');
       document.getElementById('screenShareStart').style.visibility = 'hidden';
-      document.getElementById('screenShareStart').style.display = 'none';
     }
     // if (!response.supported || response.extensionRegistered === false) {
     //   // This browser does not support screen sharing.
